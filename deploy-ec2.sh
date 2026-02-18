@@ -21,7 +21,7 @@ if ! command -v python3.12 &> /dev/null; then
 fi
 
 # Navigate to project directory
-cd /home/svc-pcldint/nova-sonic
+cd /home/svc-pcldint/nova-sonic/amazon-nova-sonic-2.0
 
 # Setup Python WebSocket Server
 echo "Setting up Python WebSocket server..."

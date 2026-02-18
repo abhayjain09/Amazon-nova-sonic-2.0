@@ -5,12 +5,12 @@ After=network.target
 [Service]
 Type=simple
 User=svc-pcldint
-WorkingDirectory=/home/svc-pcldint/nova-sonic/python-server
-Environment="PATH=/home/svc-pcldint/nova-sonic/python-server/.venv/bin:/usr/local/bin:/usr/bin:/bin"
+WorkingDirectory=/home/svc-pcldint/nova-sonic/amazon-nova-sonic-2.0/python-server
+Environment="PATH=/home/svc-pcldint/nova-sonic/amazon-nova-sonic-2.0/python-server/.venv/bin:/usr/local/bin:/usr/bin:/bin"
 Environment="AWS_DEFAULT_REGION=us-east-1"
 Environment="HOST=0.0.0.0"
 Environment="WS_PORT=8084"
-ExecStart=/home/svc-pcldint/nova-sonic/python-server/.venv/bin/python server.py
+ExecStart=/home/svc-pcldint/nova-sonic/amazon-nova-sonic-2.0/python-server/.venv/bin/python server.py
 Restart=always
 RestartSec=10
 

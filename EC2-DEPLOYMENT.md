@@ -23,8 +23,8 @@
 
 3. Move project to target directory:
    ```bash
-   sudo mkdir -p /home/svc-pcldint
-   sudo mv /tmp/Amazon-nova-sonic-2.0 /home/svc-pcldint/nova-sonic
+   sudo mkdir -p /home/svc-pcldint/nova-sonic
+   sudo mv /tmp/Amazon-nova-sonic-2.0 /home/svc-pcldint/nova-sonic/amazon-nova-sonic-2.0
    ```
 
 4. Create service user if not exists:
@@ -35,7 +35,7 @@
 
 5. Run deployment script:
    ```bash
-   cd /home/svc-pcldint/nova-sonic
+   cd /home/svc-pcldint/nova-sonic/amazon-nova-sonic-2.0
    sudo chmod +x deploy-ec2.sh
    sudo ./deploy-ec2.sh
    ```
