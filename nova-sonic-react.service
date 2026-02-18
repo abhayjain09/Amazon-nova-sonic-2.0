@@ -1,0 +1,16 @@
+[Unit]
+Description=Nova Sonic React Application
+After=network.target
+
+[Service]
+Type=simple
+User=svc-pcldint
+WorkingDirectory=/home/svc-pcldint/nova-sonic/react-client
+Environment="PATH=/usr/bin:/bin"
+Environment="PORT=3025"
+ExecStart=/usr/bin/npx serve -s build -l 3025
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

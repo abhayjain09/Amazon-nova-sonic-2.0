@@ -360,7 +360,7 @@ class S2sChatBot extends React.Component {
                 audioContentName: audioContentName
             })
 
-            const ws_url = process.env.REACT_APP_WEBSOCKET_URL ? process.env.REACT_APP_WEBSOCKET_URL : "ws://localhost:8081"
+            const ws_url = process.env.REACT_APP_WEBSOCKET_URL ? process.env.REACT_APP_WEBSOCKET_URL : "ws://" + window.location.hostname + ":8084"
             this.socket = new WebSocket(ws_url);
             this.socket.onopen = () => {
                 console.log("WebSocket connected!");
